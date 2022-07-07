@@ -1,11 +1,12 @@
-#!/usr/bin/env groovy
-// import com.ning.TestDetail
+import com.ning.TestDetail
 
 def exe(){
     stage('Demo') {
         testname = "${env.TEST}"
-        // test = new TestDetail().addTestDetails(testname)
-        println(test)
+        println(testname)
+        TestDetail test = new TestDetail()
+        testname = test.addTestDetails(testname)
+        println(testname)
     }
 }
 
