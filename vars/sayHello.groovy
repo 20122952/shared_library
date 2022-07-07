@@ -1,5 +1,4 @@
 
-
 def exe(){
     stage('Demo') {
         testname = "${env.TEST}"
