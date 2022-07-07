@@ -8,7 +8,7 @@ class TestDetail implements Serializable {
 
     String addTestDetailsJava(String text) {
         TestDetailJava test2 = new TestDetailJava()
-        testname = test2.addTestDetails(testname)
-        return testname
+        text = test2.addTestDetails(text)
+        return text
     }
 }
