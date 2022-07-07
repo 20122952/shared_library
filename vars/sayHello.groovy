@@ -5,7 +5,7 @@ def call(String name = 'human') {
     echo "Hello, ${name}."
     // test = env.TEST
     node("Build") {
-        test = new TestDetail().addTestDetails($ { name })
+        test = new TestDetail().addTestDetails(${name})
         println(test)
     }
 }
