@@ -1,14 +1,12 @@
 #!/usr/bin/env groovy
 import com.ning.TestDetail
 
-def call(String name = 'human') {
-    echo "Hello, ${name}."
-    // test = env.TEST
-    node("Build") {
-        test = new TestDetail().addTestDetails(${name})
+def exe(){
+    stage('Demo') {
+        testname = "${env.TEST}"
+        test = new TestDetail().addTestDetails(testname)
         println(test)
     }
 }
-
 
 
