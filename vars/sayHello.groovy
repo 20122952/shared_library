@@ -1,10 +1,10 @@
-import com.ning.TestDetail
+
 
 def exe(){
     stage('Demo') {
         testname = "${env.TEST}"
         println(testname)
-        TestDetail test = new TestDetail()
+        com.ning.TestDetail test = new com.ning.TestDetail()
         testname = test.addTestDetails(testname)
         println(testname)
     }
