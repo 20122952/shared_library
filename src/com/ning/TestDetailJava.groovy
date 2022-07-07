@@ -1,6 +1,4 @@
-package com.ning;
-
-import java.io.Serializable;
+package com.ning
 
 public class TestDetailJava  implements Serializable {
     public String addTestDetails(String text){
